@@ -3,11 +3,11 @@
 //  CryptoCrazySwiftUI
 //
 //  Created by Seyma on 22.10.2023.
-//
+//  //https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainView()
 }
