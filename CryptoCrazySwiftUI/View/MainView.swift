@@ -28,7 +28,8 @@ struct MainView: View {
                 }
             }.navigationTitle(Text("Crypto Crazy"))
         }.task { // task asenkrondur bu yüzden await ile direkt kullanabiliyoruz.
-            await cryptoListViewModel.downloadCryptosAsync(url: URL(string: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json")!)
+            await cryptoListViewModel.downloadCryptosContinuation(url: URL(string: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json")!)
+//            await cryptoListViewModel.downloadCryptosAsync(url: URL(string: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json")!)  // async
         }
         
 //        .onAppear { // onAppear bu görünüm oluşturulunca ne yapacağını sorar
